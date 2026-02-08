@@ -41,7 +41,7 @@ su - bob
 sudo groupadd accountants
 cat /etc/group
 ```
-#### We can now see that 'accountants' is now listed group
+#### We can now see that 'accountants' is now a listed group
 ![Listing Groups](images/listing_groups.png)
 
 
