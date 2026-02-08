@@ -51,7 +51,7 @@ cat /etc/group
 sudo gpasswd -a bob accountants
 sudo gpasswd -a alice accountants
 ```
-![account users ](images/accountants_users.png)
+![accountants users ](images/accoutants_users.png)
 ![adding users to group](images/adding_users_to_groups.png)
 
 ## This is the end of part 1, in part two I move onto learn how to manage permissions in Linux
