@@ -6,7 +6,8 @@
 ```
 cat /etc/passwd
 ```
-insert image
+![Listing Users](images/Listing_users.png)
+
 
 ## Creating users
 #### Next I wanted to add a couple of users, I did so using the 'sudo adduser' command. During this process I also had to give both of them a password.
