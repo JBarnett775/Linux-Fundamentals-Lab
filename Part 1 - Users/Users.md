@@ -15,7 +15,7 @@ sudo adduser alice
 sudo adduser bob
 ```
 #### Now if I re-run the commmand to list users we can see that Alice and Bob are now there.
-![Listing Users Bob and Alice](images/Listing_users_BA.png)
+![Listing Users Bob and Alice](images/listing_users_BA.png)
 
 
 ## Removing users
