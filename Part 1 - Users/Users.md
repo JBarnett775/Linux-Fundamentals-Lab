@@ -2,7 +2,7 @@
 ## This part of my project is where I learnt the different commands around users that can used in Linux.
 
 ## Listing users
-#### First of all I used the 'cat' comand to list all the current users
+#### First of all I used the 'cat' command to list all the current users
 ```
 cat /etc/passwd
 ```
@@ -14,7 +14,7 @@ cat /etc/passwd
 sudo adduser alice
 sudo adduser bob
 ```
-#### Now if I re-run the commmand to list users we can see that Alice and Bob are now there.
+#### Now if I re-run the command to list users we can see that Alice and Bob are now there.
 ![Listing Users Bob and Alice](images/listing_users_BA.png)
 
 
