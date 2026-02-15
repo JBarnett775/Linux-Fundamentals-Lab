@@ -10,7 +10,7 @@
 ```
 sudo apt install ufw
 ```
-![install ufw](images/install_ufw.png)
+![install ufw](Images/install_ufw.png)
 
 ## - Checking the status of the current firewall -
 #### To check the status I will use the following command
