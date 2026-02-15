@@ -18,7 +18,7 @@ sudo apt install ufw
 sudo ufw status
 ```
 #### As can been see by the screenshot, the current status of the firewall is that it is inactive
-![status](images/status.png)
+![status](Images/status.png)
 
 #### This means that there are not any firewall rules enforced.
 
@@ -27,7 +27,7 @@ sudo ufw status
 ```
 sudo ufw allow ssh
 ```
-![allow ssh](images/allow_ssh.png)
+![allow ssh](Images/allow_ssh.png)
 
 #### This will automatically open port 22 which allows SSH, without this SSH would be blocked
 
@@ -36,7 +36,7 @@ sudo ufw allow ssh
 ```
 sudo ufw allow 80
 ```
-![allow 80](images/allow_HTTP.png)
+![allow 80](Images/allow_HTTP.png)
 
 #### Without opening port 80 the firewall would automatically block web traffic.
 
@@ -45,14 +45,14 @@ sudo ufw allow 80
 ```
 sudo ufw enable
 ```
-![FW_enable](images/FW_enable.png)
+![FW_enable](Images/FW_enable.png)
 
 ## - Checking the rules -
 #### Now that I have the firewall enabled I can use the following command to see which rules I have set up.
 ```
 sudo ufw status verbose
 ```
-![rules check](images/checking_rules.png)
+![rules check](Images/checking_rules.png)
 #### As can be seen from the capture SSH and Web Traffic is allow while everything else is blocked
 
 ## - Security in action -
@@ -60,13 +60,13 @@ sudo ufw status verbose
 ```
 ssh alice@localhost
 ```
-![ssh_alice](images/ssh_alice.png)
+![ssh_alice](Images/ssh_alice.png)
 
 #### If I now run the following command to remove SSH then it should fail when I try to access the VM from my Mac's terminal
 ```
 sudo ufw delete allow ssh
 ```
-![ssh block](images/ssh_block.png)
+![ssh block](Images/ssh_block.png)
 
 #### Doing this test ensured that my firewall was configured correctly to allow and then deny SSH with the rules I set up.
 
