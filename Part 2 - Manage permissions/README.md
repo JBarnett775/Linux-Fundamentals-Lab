@@ -1,7 +1,7 @@
-# - Managing permissions -
+# - Managing Permissions -
 ### This part of my project is all about permissions within Linux: Linux file ownership, Linux permission system as well as how to control who can access certain files.
 
-## - Set up -
+## - Set Up -
 #### First of all I wanted to create a test folder called "project" that I could use to practice permissions within Linux
 ```
 sudo mkdir /home/alice/project
@@ -10,7 +10,7 @@ sudo mkdir /home/alice/project
 ```
 su - alice
 ```
-## - Checking ownership -
+## - Checking Ownership -
 #### Now that I have created a new folder in Alice's home directory I ran the following command to see who currently owned the file
 ```
 ls -l /home/alice
@@ -119,7 +119,7 @@ d rwx --- ---
 ```
 #### The output has verified that the owner has full access while the group and others have no access.
 
-## - Testing permissions -
+## - Testing Permissions -
 #### With the following permissions I have set up for Alice's "Project" folder Bob theoretically should not be able to write, read or execute it. I will now log as Bob to test this.
 
 ![verify Bob](images/bob_test.png)
