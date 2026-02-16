@@ -1,7 +1,7 @@
-# <u>Managing permissions </u>
+# - Managing permissions -
 ### This part of my project is all about permissions within Linux: Linux file ownership, Linux permission system as well as how to control who can access certain files.
 
-## <u> Set up </u>
+## - Set up -
 #### First of all I wanted to create a test folder called "project" that I could use to practice permissions within Linux
 ```
 sudo mkdir /home/alice/project
@@ -10,7 +10,7 @@ sudo mkdir /home/alice/project
 ```
 su - alice
 ```
-## <u> Checking ownership </u>
+## - Checking ownership -
 #### Now that I have created a new folder in Alice's home directory I ran the following command to see who currently owned the file
 ```
 ls -l /home/alice
@@ -19,7 +19,7 @@ ls -l /home/alice
 
 #### From running the command I can see that the folder was created by "root" and belongs to the group called "root", however I want to change the ownership into Alice's name.
 
-## <u> Changing Ownership </u>
+## - Changing Ownership -
 #### in order to change the ownership I will run the following code
 ```
 sudo chown alice:alice /home/alice/project
@@ -42,7 +42,7 @@ ls -l /home/alice
 
 #### If we compare the two snapshots that were taken from running the ls command we can see that the user and user group were both listed as "root", now they are both listed as "alice"
 
-## <u> Understanding Linux Permissions </u>
+## - Understanding Linux Permissions -
 #### I want to look into the first part of the line "drwxr-xr-x", to someone who is not experienced with the Linux terminal might not understand what these letters represent, to explain this I'm going to dive the string into four parts
 ```
 d | rwx | r-x | r-x
@@ -68,7 +68,7 @@ rwx r-x r-x
 ```
 #### This means that the owner (Alice) has all permissions, whereas the group and other users can only read and execute. But this folder should only be private to Alice so I will change the permissions to show this.
 
-## <u> Changing Permissions </u>
+## - Changing Permissions -
 #### I will use the "chmod" command to change the permissions
 ```
 chmod 700 /home/alice/project
@@ -105,7 +105,7 @@ chmod 700 /home/alice/project
 
 #### Nobody else can access it.
 
-## <u> Verifying the new permissions </u>
+## - Verifying the new permissions -
 #### After running the following commands
 ```
 chmod 700 /home/alice/project
@@ -119,14 +119,14 @@ d rwx --- ---
 ```
 #### The output has verified that the owner has full access while the group and others have no access.
 
-## <u> Testing permissions </u>
+## - Testing permissions -
 #### With the following permissions I have set up for Alice's "Project" folder Bob theoretically should not be able to write, read or execute it. I will now log as Bob to test this.
 
 ![verify Bob](images/bob_test.png)
 
 #### as can be seen, Bob does not have permission.
 
-## <u> Summary </u>
+## - Summary -
 #### From this task I have learnt the following: 
 - Creating directories  
 - Understanding Linux ownership  
