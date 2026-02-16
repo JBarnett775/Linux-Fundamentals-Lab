@@ -1,14 +1,14 @@
-# Users
+# - Users -
 ## This part of my project is where I learnt the different commands around users that can used in Linux.
 
-## Listing users
+## - Listing users -
 #### First of all I used the 'cat' command to list all the current users
 ```
 cat /etc/passwd
 ```
 ![Listing Users](images/Listing_users.png)
 
-## Creating users
+## -Creating users-
 #### Next I wanted to add a couple of users, I did so using the 'sudo adduser' command. During this process I also had to give both of them a password.
 ```
 sudo adduser alice
@@ -18,14 +18,14 @@ sudo adduser bob
 ![Listing Users Bob and Alice](images/listing_users_BA.png)
 
 
-## Removing users
+## - Removing users -
 #### I can do this by using the following command
 ```
 sudo userdel -r alice
 ``` 
 ![Listing Users](images/delete_user.png)
 
-## Changing users
+## - Changing users -
 #### Now that I have created two new users I can now log into to one of them.
 ```
 su - bob
