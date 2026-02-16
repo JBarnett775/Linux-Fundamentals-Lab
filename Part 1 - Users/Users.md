@@ -8,7 +8,7 @@ cat /etc/passwd
 ```
 ![Listing Users](images/Listing_users.png)
 
-## -Creating users-
+## - Creating users -
 #### Next I wanted to add a couple of users, I did so using the 'sudo adduser' command. During this process I also had to give both of them a password.
 ```
 sudo adduser alice
@@ -35,7 +35,7 @@ su - bob
 ![Changing Users](images/changing_users.png)
 
 
-## Creating groups
+## - Creating groups -
 #### lets say I want to Bob and Alice to a group called 'accountants', I would use the following command
 ```
 sudo groupadd accountants
@@ -45,7 +45,7 @@ cat /etc/group
 ![Listing Groups](images/listing_groups.png)
 
 
-## Adding users to a group
+## - Adding users to a group -
 #### Now that we have the accountants group set us, lets add Alice and Bob to it with the following command
 ```
 sudo gpasswd -a bob accountants
